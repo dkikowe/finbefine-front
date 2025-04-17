@@ -1,0 +1,309 @@
+.events {
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.title {
+
+
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #3e3e3e;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.controlButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #2DB93B;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.controlIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  overflow-x: hidden;
+}
+
+.eventCard {
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 800px;
+
+  
+
+}
+
+.eventImage {
+  width: 387px;
+  height: 269px;
+  flex-shrink: 0;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+}
+
+.eventContent {
+  padding: 20px;
+  flex: 1;
+  
+}
+
+.eventTitle {
+ 
+  margin: 0 0 15px 0;
+  font-family: "Inter", sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 122%;
+color: #3e3e3e;
+}
+
+.eventMeta {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.metaItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #AFAFAF;
+  font-size: 14px;
+  
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.eventDescription {
+
+
+  margin: 0 0 15px 0;
+
+  font-family: "Inter", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 137%;
+color: #3e3e3e;
+}
+
+.readMore {
+  background: transparent;
+  border: none;
+  color: #3D3D3D;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+
+  
+  &:hover {
+    cursor: pointer;
+  }
+} 
+
+.right{
+    transform: rotate(-180deg);
+}
+
+@media (max-width: 768px) {
+    
+  
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+  
+    .title {
+      font-size: 22px;
+    }
+  
+    .controls {
+      gap: 8px;
+    }
+  
+    .controlButton {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .eventsList {
+        
+      gap: 16px;
+    }
+  
+    .eventCard {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .eventImage {
+      width: 100%;
+      height: auto;
+  
+      img {
+        height: 200px;
+        border-radius: 15px 15px 0 0;
+      }
+    }
+  
+    .eventContent {
+      padding: 16px;
+    }
+  
+    .eventTitle {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    .eventMeta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+  
+    .metaItem {
+      font-size: 13px;
+    }
+  
+    .eventDescription {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  
+    .readMore {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .events {
+      padding: 0 16px;
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+  
+    .title {
+      font-size: 22px;
+    }
+  
+    .controls {
+      gap: 8px;
+    }
+  
+    .controlButton {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .eventsList {
+      display: flex !important; // заменяем grid на flex
+      flex-direction: row;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 16px;
+      padding-bottom: 10px;
+  
+      &::-webkit-scrollbar {
+        display: flex;
+      }
+    }
+  
+    .eventCard {
+      flex: 0 0 100%;
+      min-width: 95%;
+      max-width: 95%;
+      flex-direction: column;
+      border-radius: 15px;
+    }
+  
+    .eventImage {
+      width: 100%;
+      height: 200px;
+  
+      img,
+      iframe {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+      }
+    }
+  
+    .eventContent {
+      padding: 16px;
+    }
+  
+    .eventTitle {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  
+    .eventMeta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+  
+    .metaItem {
+      font-size: 13px;
+    }
+  
+    .eventDescription {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  
+    .readMore {
+      font-size: 14px;
+    }
+  }
+  
+  

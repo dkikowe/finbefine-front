@@ -1,0 +1,224 @@
+.header
+    width: 100%
+    height: 138px
+    background: #FFFFFF
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    gap: 10px
+    padding: 20px 40px
+    box-sizing: border-box
+
+.headTop
+    display: flex
+    gap: 80px
+    justify-content: center
+    align-items: center
+    width: 100vw
+@font-face
+    font-family: 'PT Root UI VF'
+    src: url('/fonts/pt-root-ui_vf.ttf') format('truetype')
+    font-weight: 100 900
+    font-style: normal
+    font-display: swap
+
+.container
+    width: 100vw
+    padding: 20px 0px
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.logo
+    display: flex
+    align-items: center
+    font-family: "Inter"
+    gap: 8px
+
+.logoText
+    font-size: 18px
+    line-height: 1
+    font-weight: 700
+
+    &:nth-child(1),
+    &:nth-child(3)
+        color: #102828
+
+    &:nth-child(2)
+        color: #2DB92D
+
+.searchWrapper
+    display: flex
+    justify-content: center
+    width: 100%
+
+.search
+    width: 692px
+    height: 32px
+    background: #F5F8FC
+    border-radius: 30px
+    display: flex
+    align-items: center
+    padding: 0 16px
+
+.searchInput
+    width: 100%
+    height: 100%
+    background: transparent
+    border: none
+    outline: none
+    font-size: 14px
+    color: #303840
+    font-family: 'PT Root UI VF'
+
+    &::placeholder
+        color: #303840
+        opacity: 0.5
+
+.searchIcon
+    width: 13px
+    height: 11px
+    background: #2DB92D
+    mask: url("data:image/svg+xml,%3Csvg width='13' height='11' viewBox='0 0 13 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5 10.5L9 7M10.5 5.5C10.5 8.26142 8.26142 10.5 5.5 10.5C2.73858 10.5 0.5 8.26142 0.5 5.5C0.5 2.73858 2.73858 0.5 5.5 0.5C8.26142 0.5 10.5 2.73858 10.5 5.5Z' stroke='%232DB92D'/%3E%3C/svg%3E") no-repeat center
+
+.locationUserWrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+
+.location
+    color: #2DB92D
+    font-size: 16px
+
+.user
+    color: #303840
+    font-size: 16px
+    font-family: 'PT Root UI VF'
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 30px
+
+.userCab
+    color: #303840
+    font-size: 16px
+    font-family: 'PT Root UI VF'
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row
+    gap: 0px
+
+.userCab
+    display: flex
+    flex-direction: column
+    gap: 5px
+
+.cabnik
+    font-family: "PT Root UI", sans-serif
+    font-weight: 500
+    font-size: 12px
+    line-height: 200%
+    color: #303440
+
+.loc
+    font-family: "PT Root UI", sans-serif
+    font-weight: 500
+    font-size: 12px
+    line-height: 200%
+    color: #2db93b
+
+.nav
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-top: 10px
+    align-items: center
+
+.navList
+    display: flex
+    justify-content: space-between
+    list-style: none
+    padding: 0
+    gap: 55px
+    font-family: 'PT Root UI VF'
+
+.navItem
+    margin: 0
+    padding: 0
+
+.navLink
+    color: #303840
+    text-decoration: none
+    font-size: 16px
+    transition: color 0.2s
+
+    &:hover
+        color: #2DB92D
+
+.moreIcon
+    display: inline-block
+    width: 8px
+    height: 4px
+    margin-left: 4px
+    background: #303840
+    mask: url("data:image/svg+xml,%3Csvg width='8' height='4' viewBox='0 0 8 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 4L0 0H8L4 4Z' fill='%23303840'/%3E%3C/svg%3E") no-repeat center
+
+@media (max-width: 768px)
+    .header
+        height: auto
+
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .headTop
+        display: flex
+        justify-content: center
+        width: 100%
+        flex-direction: column
+        gap: 16px
+        align-items: center
+
+    .container
+        padding: 0
+        align-items: center
+
+    .logo
+        justify-content: center
+        width: 100%
+
+    .search
+        width: 90%
+        height: 36px
+
+    .user
+        width: 90%
+        flex-direction: row
+        justify-content: space-between
+        gap: 10px
+
+    .userCab
+        flex-direction: row
+        align-items: center
+        gap: 8px
+
+    .nav
+        overflow-x: auto
+        justify-content: flex-start
+        width: 90%
+
+    .navList
+        flex-wrap: nowrap
+        gap: 20px
+        padding-bottom: 10px
+
+    .navItem
+        flex-shrink: 0
+
+    .navLink
+        font-size: 14px

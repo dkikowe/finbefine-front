@@ -1,0 +1,115 @@
+.dictionary
+  width: 580px
+  height: 311px
+  background: #FFFFFF
+  border: 0.5px solid #C2C2C2
+  border-radius: 15px
+  padding: 20px 30px
+  display: flex
+  flex-direction: column
+  gap: 15px
+
+.wrapper
+  padding: 40px 20px
+  max-width: 1200px
+  margin: 0 auto
+  text-align: left
+  margin-top: 100px
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 50px
+
+.header
+  display: flex
+  flex-direction: column
+  gap: 10px
+
+.titleRow
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.title
+  font-family: "Inter", sans-serif
+  font-weight: 800
+  font-size: 18px
+  color: #3e3e3e
+.subtitle
+  font-family: "Inter", sans-serif
+  font-weight: 400
+  font-size: 18px
+  color: #afafaf
+
+.links
+  font-family: "Inter", sans-serif
+  font-weight: 400
+  font-size: 20px
+  color: #2d8fb9
+
+.linksBlock
+  display: flex
+  flex-direction: column
+  gap: 20px
+
+.link
+  font-family: "Inter", sans-serif
+  font-weight: 400
+  font-size: 16px
+  text-align: left
+  color: #2db93b
+  display: flex
+  align-items: center
+  img
+    padding-top: 10px
+  &:hover
+    text-decoration: underline
+
+.arrow
+  width: 0
+  height: 1px
+  border: 1.5px solid #2DB93D
+  transform: rotate(45deg)
+
+@media (max-width: 768px)
+  .wrapper
+    flex-direction: column
+
+    gap: 24px
+    margin: 0
+    justify-content: center
+    align-items: center
+    display: flex
+    width: 90%
+
+  .dictionary
+    width: 90%
+    height: auto
+    padding: 20px
+    gap: 12px
+
+  .titleRow
+    flex-direction: column
+    align-items: flex-start
+    gap: 10px
+
+  .title
+    font-size: 16px
+    text-align: left
+
+  .subtitle
+    font-size: 14px
+
+  .links
+    font-size: 16px
+
+  .linksBlock
+    gap: 16px
+
+  .link
+    font-size: 14px
+    gap: 6px
+
+  .link img
+    padding-top: 0
+    width: 14px

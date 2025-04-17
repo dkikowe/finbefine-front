@@ -1,0 +1,179 @@
+.wrapper
+    padding: 40px 20px
+    max-width: 1200px
+    margin: 0 auto
+    text-align: left
+
+.title
+
+    margin-bottom: 20px
+    font-family: "Inter", sans-serif
+    font-weight: 700
+    font-size: 30px
+    line-height: 160%
+    letter-spacing: 0.02em
+    color: #3e3e3e
+
+.tabs
+    display: flex
+    justify-content: flex-start
+    gap: 30px
+    margin-bottom: 30px
+    font-size: 16px
+    color: #999
+    border-bottom: 1px solid #ccc
+    padding-bottom: 10px
+    width: 38%
+
+    span
+        cursor: pointer
+        padding-bottom: 5px
+        font-family: "Inter", sans-serif
+        font-weight: 500
+        font-size: 16px
+
+.buttonWrap
+    display: flex
+    justify-content: center
+    align-items: center
+
+.activeTab
+    color: #2dbb54
+    border-bottom: 2px solid #2dbb54
+    font-weight: 600
+
+.cardGrid
+    display: flex
+    flex-wrap: wrap
+    gap: 20px
+    justify-content: center
+    margin-bottom: 40px
+
+.card
+    background: #fff
+    border-radius: 16px
+    padding: 20px
+    width: 240px
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05)
+    text-align: left
+
+.cardHeader
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+    font-family: "Inter", sans-serif
+    font-weight: 700
+    font-size: 20px
+    line-height: 120%
+    letter-spacing: 0.02em
+    color: #3e3e3e
+
+.bankName
+    font-size: 18px
+    font-weight: 600
+    color: #000
+
+.subtitle
+    font-size: 14px
+    color: #999
+    margin-top: 2px
+
+.logo
+    width: 36px
+    height: 36px
+
+.cardRow
+    display: flex
+    justify-content: space-between
+    font-size: 14px
+    padding: 10px 0
+    border-top: 1px solid #eee
+
+    span
+        font-family: "Inter", sans-serif
+        font-weight: 700
+        font-size: 16px
+        line-height: 112%
+        color: #3e3e3e
+    p
+        font-family: "Inter", sans-serif
+        font-weight: 400
+        font-size: 14px
+        line-height: 129%
+        color: #afafaf
+
+    &:first-of-type
+        border-top: none
+
+.button
+    background: transparent
+    border: 1px solid #2dbb54
+    color: #2dbb54
+    padding: 12px 24px
+    font-size: 16px
+    border-radius: 8px
+    cursor: pointer
+    transition: background 0.3s ease
+
+    &:hover
+        background: rgba(45, 187, 84, 0.05)
+
+@media (max-width: 768px)
+    .wrapper
+        margin: 0
+        width: 90%
+        text-align: left
+
+    .title
+        font-size: 22px
+        margin-bottom: 16px
+
+    .tabs
+        width: 100%
+        flex-wrap: wrap
+        gap: 16px
+        font-size: 14px
+        padding-bottom: 8px
+        margin-bottom: 20px
+
+        span
+            font-size: 14px
+
+    .cardGrid
+        flex-direction: column
+        gap: 16px
+        align-items: center
+
+    .cardHeader
+        flex-direction: column
+        align-items: flex-start
+        gap: 8px
+        font-size: 18px
+
+    .bankName
+        font-size: 16px
+
+    .subtitle
+        font-size: 13px
+
+    .logo
+        width: 32px
+        height: 32px
+
+    .cardRow
+        flex-direction: column
+        align-items: flex-start
+        padding: 8px 0
+        gap: 6px
+
+        span
+            font-size: 15px
+
+        p
+            font-size: 13px
+
+    .button
+        width: 100%
+        font-size: 14px
+        padding: 10px 16px

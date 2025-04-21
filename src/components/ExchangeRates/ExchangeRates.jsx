@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ExchangeRates.module.scss";
+import styles from "./ExchangeRates.module.sass";
 
 const currencies = [
   {
@@ -82,8 +82,10 @@ const ExchangeRates = () => {
                   <p className={styles.titleCard}>Покупка</p>
                   <p className={styles.rating}>86.15 ₽</p>
                 </div>
-                <div className={styles.divider}></div>
-                <img src="/images/main-icons/right.svg" alt="→" />
+                <div className={styles.divide}>
+                  <div className={styles.divider}></div>
+                  <img src="/images/main-icons/right.svg" alt="→" />
+                </div>
               </div>
               {i < currencies.length - 1 && <hr className={styles.line} />}
             </React.Fragment>
@@ -99,8 +101,10 @@ const ExchangeRates = () => {
                   <p className={styles.titleCard}>Продажа</p>
                   <p className={styles.rating}>90.27 ₽</p>
                 </div>
-                <div className={styles.divider}></div>
-                <img src="/images/main-icons/right.svg" alt="→" />
+                <div className={styles.divide}>
+                  <div className={styles.divider}></div>
+                  <img src="/images/main-icons/right.svg" alt="→" />
+                </div>
               </div>
               {i < currencies.length - 1 && <hr className={styles.line} />}
             </React.Fragment>

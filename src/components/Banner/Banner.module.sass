@@ -6,6 +6,8 @@
     gap: 20px
     max-width: 1200px
     margin: 0 auto
+    padding: 10px
+
     img
         height: 350px
         width: 100%
@@ -14,24 +16,26 @@
 
     .rest
         display: flex
-        gap: 100px
-        img
-            object-fit: cover
+        gap: 75px
+.banner1
+    object-fit: cover
 
-            height: 250px
-            width: 550px
+    height: 250px
+    width: 500px
+
 @media (max-width: 768px)
-    .banner1
-        width: 100%
-
     .container
         align-items: center
-
-        gap: 16px
+        justify-content: center
+        gap: 10px
+        .banner1
+            height: 40%
 
     .rest
-        flex-direction: column
+        flex-direction: row
         align-items: center
-        gap: 12px
+        justify-content: center
+        gap: 5px !important
         img
-            width: 100%
+            width: 50%
+            height: 40%

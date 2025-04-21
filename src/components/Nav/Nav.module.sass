@@ -13,7 +13,7 @@
     justify-content: center
     align-items: center
     text-align: center
-    font-family: "Inter", sans-serif
+
     font-weight: 500
     font-size: 16px
     text-align: center
@@ -24,9 +24,15 @@
 .cards
     display: flex
     gap: 20px
-    width: 100vw
+    width: 100%
     justify-content: center
     align-items: center
+
+.cardsMobile
+    display: none
+
+.allMobile
+    display: none
 
 .card
     display: flex
@@ -56,28 +62,54 @@
 
 @media (max-width: 768px)
     .container
-        padding: 20px
         gap: 16px
-        width: 80%
+        width: 100%
+        background: #fff
+        padding: 0
 
     .all
+        display: none
+
+    .allMobile
+        text-align: center
+
+        font-weight: 500
+        font-size: 16px
+        text-align: center
+        color: #2db93b
+
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
         width: 100%
         font-size: 14px
         text-align: center
-
+        &:hover
+            color: #218b2c
     .cards
-        flex-direction: column
+        display: none
+
+    .cardsMobile
+        flex-direction: row
+        display: flex
+        overflow-x: auto
         gap: 12px
-        width: 100%
+        padding: 10px 0
+        max-width: 90%
+        scroll-snap-type: x mandatory
+        -webkit-overflow-scrolling: touch
 
     .card
-        width: 100%
-        max-width: 100%
+        width: 80px
+        flex-shrink: 0
         height: auto
-        padding: 20px
+        padding: 16px
+        scroll-snap-align: start
+        border-radius: 16px
 
     .image
-        width: 48px
+        width: 28px
         height: auto
         margin-bottom: 8px
 

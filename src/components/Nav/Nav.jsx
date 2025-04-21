@@ -49,6 +49,17 @@ export default function Nav() {
       <div className={s.all}>
         <p> Все сервисы</p>
       </div>
+      <div className={s.cardsMobile}>
+        {icons.map((icon, index) => (
+          <div key={index} className={s.card}>
+            <img src={icon.img} alt={icon.title} className={s.image} />
+            <div className={s.label}>{icon.title}</div>
+          </div>
+        ))}
+      </div>
+      <div className={s.allMobile}>
+        <p> Все сервисы</p>
+      </div>
     </div>
   );
 }

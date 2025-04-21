@@ -9,8 +9,8 @@ export default function Banner() {
         className={s.banner1}
       />
       <div className={s.rest}>
-        <img src="/images/header-icons/banner1.svg" alt="" />
-        <img src="/images/header-icons/banner2.svg" alt="" />
+        <img src="/images/main-icons/b1.svg" alt="sds" />
+        <img src="/images/main-icons/b2.svg" alt="ds" />
       </div>
     </div>
   );
